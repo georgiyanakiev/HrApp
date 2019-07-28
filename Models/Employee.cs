@@ -11,6 +11,7 @@ namespace HrApp.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class Employee
@@ -20,6 +21,8 @@ namespace HrApp.Models
         public string Position { get; set; }
         public string Office { get; set; }
         public Nullable<int> Salary { get; set; }
+        [DisplayName]
+
         public string ImagePath { get; set; } 
 
         [NotMapped]
